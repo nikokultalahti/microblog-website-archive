@@ -7,6 +7,15 @@
 	"items": [
 		
 			{
+				"id": "http://nikokultalahti.micro.blog/2025/06/11/im-likely-looking-to-switch/",
+				
+				"content_html": "<p>I’m likely looking to switch to Android as my next phone (from iPhone). I’m debating between Fairphone and Google Pixel, and GrapheneOS and CalyxOS.</p>\n<p>Does anyone know if it’s possible to use payment cards in either of those ROM’s? I have some cards (such as lunch benefit card) that are only available digitally.</p>\n",
+				"content_text": "I’m likely looking to switch to Android as my next phone (from iPhone). I’m debating between Fairphone and Google Pixel, and GrapheneOS and CalyxOS. \n\nDoes anyone know if it’s possible to use payment cards in either of those ROM’s? I have some cards (such as lunch benefit card) that are only available digitally. \n",
+				"date_published": "2025-06-11T10:36:42+03:00",
+				"url": "https://nikokultalahti.com/2025/06/11/im-likely-looking-to-switch/",
+				"tags": ["Notes"]
+			},
+			{
 				"id": "http://nikokultalahti.micro.blog/2025/06/05/just-learned-a-handy-command/",
 				
 				"content_html": "<p>Just learned a handy command for getting BigQuery table/view schema to json:</p>\n<p><code>bq show --schema --format=prettyjson project_id:dataset_id.table_id &gt; my_table_schema.json</code></p>\n",
