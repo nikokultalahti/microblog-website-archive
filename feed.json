@@ -7,6 +7,15 @@
 	"items": [
 		
 			{
+				"id": "http://nikokultalahti.micro.blog/2025/07/27/spent-the-last-night-in/",
+				
+				"content_html": "<p>Spent the last night in tent. Being a somewhat restless sleeper, finally found a sleeping pad that I can fall asleep and sleep comfortably on.</p>\n<p>Time to start planning some overnight hiking route now that sleeping stuff is under control.</p>\n",
+				"content_text": "Spent the last night in tent. Being a somewhat restless sleeper, finally found a sleeping pad that I can fall asleep and sleep comfortably on. \n\nTime to start planning some overnight hiking route now that sleeping stuff is under control. \n",
+				"date_published": "2025-07-27T09:09:35+03:00",
+				"url": "https://nikokultalahti.com/2025/07/27/spent-the-last-night-in/",
+				"tags": ["Notes"]
+			},
+			{
 				"id": "http://nikokultalahti.micro.blog/2025/06/18/my-old-eol-chromebook-just/",
 				
 				"content_html": "<p>My old EOL Chromebook just got a new life as I completely removed ChromeOS from the device and installed Linux onto it. I had to open the device and remove the write protection screw in order to being able to flash a new firmware on it. Everything went smoothly and now I have a spare laptop.</p>\n",
