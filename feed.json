@@ -7,6 +7,15 @@
 	"items": [
 		
 			{
+				"id": "http://nikokultalahti.micro.blog/2025/08/05/i-see-ghost-has-been/",
+				
+				"content_html": "<p>I see <a href=\"https://ghost.org/changelog/6/\">Ghost 6.0</a> has been launched, with highly anticipated ActivityPub support.</p>\n<p>I need to have a closer look at Ghost yet again.</p>\n<p>In any case, a big achievement - congrats to the whole team at Ghost.</p>\n",
+				"content_text": "I see [Ghost 6.0](https://ghost.org/changelog/6/) has been launched, with highly anticipated ActivityPub support. \n\nI need to have a closer look at Ghost yet again.  \n\nIn any case, a big achievement - congrats to the whole team at Ghost. \n",
+				"date_published": "2025-08-05T00:37:58+03:00",
+				"url": "https://nikokultalahti.com/2025/08/05/i-see-ghost-has-been/",
+				"tags": ["Notes"]
+			},
+			{
 				"id": "http://nikokultalahti.micro.blog/2025/07/27/spent-the-last-night-in/",
 				
 				"content_html": "<p>Spent the last night in tent. Being a somewhat restless sleeper, finally found a sleeping pad that I can fall asleep and sleep comfortably on.</p>\n<p>Time to start planning some overnight hiking route now that sleeping stuff is under control.</p>\n",
