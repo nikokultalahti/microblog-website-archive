@@ -25,6 +25,47 @@
 	  <div class="h-entry">
 		
 
+		<a href="https://nikokultalahti.com/2025/10/25/im-really-consider-buying-myself/" class="u-url"><time class="dt-published" datetime="2025-10-25 23:58:14 &#43;0300">Oct 25, 2025</time></a>
+
+		<div class="e-content">
+			 <p>I’m really consider buying myself a split keyboard. That would also be my first mechanical keyboard.</p>
+<p>Any suggestions for a good keyboard for someone in my situation? Or tips to take into consideration?</p>
+<p>#keyboard</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://nikokultalahti.com/2025/08/28/migrating-from-wallabag-to-karakeep/">Migrating from Wallabag to Karakeep</a></h1>
+		
+
+		<a href="https://nikokultalahti.com/2025/08/28/migrating-from-wallabag-to-karakeep/" class="u-url"><time class="dt-published" datetime="2025-08-28 19:47:37 &#43;0300">Aug 28, 2025</time></a>
+
+		<div class="e-content">
+			 <p>Today, I migrated my read-later list (and archived links) from <a href="https://wallabag.org/">Wallabag</a> to <a href="https://karakeep.app/">Karakeep</a>.</p>
+<p>I self-host both of these applications on my Synology DS224+ NAS.</p>
+<p>It turned out, that migrating the links from Wallabag to Karakeep is not as straight-forward as exporting from Wallabag and importing into Karakeep. The reason being that there were no file-format that Wallabag could export to that could be imported to Karakeep.</p>
+<p>What I ended up doing is exporting the links from Wallabag as json, converting that to html and importing that into Karakeep. Worked flawlessly.</p>
+<p>From <a href="https://github.com/karakeep-app/karakeep/discussions/581">this discussion on GitHub</a> I found <a href="https://github.com/axilleas">axilleas comment</a> that included a ruby script that I used to do the conversion.</p>
+<p>I&rsquo;m using <a href="https://projectbluefin.io/">Bluefin</a> on my <a href="https://frame.work/fi/en/laptop13">Framework 13 laptop</a> so here&rsquo;s what I did step-by-step:</p>
+<ol>
+<li>Exported the links from Wallabag as json file into a folder on my computer (let&rsquo;s say <code>~/Temp)</code> and renamed the file as archived_links.json</li>
+<li>Spun up Ubuntu container using Distroshelf</li>
+<li>Used terminal to enter the container, updated it and installed ruby (and nano) with <code>sudo apt-get update &amp;&amp; sudo apt-get install ruby-full nano</code></li>
+<li>The way Distroshelf works (at least on Bluefin) is that it mounts my home folder to any created container, so I only had to run <code>cd ~/Temp</code> to enter the folder with the exported file</li>
+<li>I created a new file with <code>touch wallabag-json-to-html-karakeep.rb</code></li>
+<li>I opened the file with <code>nano wallabag-json-to-html-karakeep.rb</code> and pasted the code from the link above into it, saved and closed the file</li>
+<li>I ran <code>ruby wallabag-json-to-html-karakeep.rb archived_links.json archived_links.html</code></li>
+</ol>
+<p>That&rsquo;s it. A new file was created, which could be imported (successfully) into Karakeep. I <a href="https://gist.github.com/nikokultalahti/29ac6869176491bd9b761a8a0503b9a9">created a gist of the code</a>, which hopefully makes it a bit more accessible than browsing through GitHub discussions. As said, credits for the code goes to <a href="https://github.com/axilleas">axilleas on GitHub</a>.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+
 		<a href="https://nikokultalahti.com/2025/08/28/decided-to-give-karakeep-a/" class="u-url"><time class="dt-published" datetime="2025-08-28 05:05:58 &#43;0300">Aug 28, 2025</time></a>
 
 		<div class="e-content">
@@ -186,7 +227,8 @@
 		<a href="https://nikokultalahti.com/2024/02/22/tech-ecosystem-dilemma/" class="u-url"><time class="dt-published" datetime="2024-02-22 00:43:54 &#43;0300">Feb 22, 2024</time></a>
 
 		<div class="e-content">
-			 <!-- raw HTML omitted -->
+			 <p>Once again, I’m considering if I should entirely change my personal tech stack, both in terms of hardware and software.</p><p>This is a <strong>thought</strong> that I tend to revisit often. Actually following through, not <strong>so</strong> often.</p><p>I have had a habit of making 180 degree turns and moving to an entirely different ecosystem roughly every two years. It’s been somewhat of a joke for my friends. And a source of frustration for my wife.</p><p>Usually, I’ve shuffled between:</p><ul><li>All in Apple: iPhone, MacBook, iCloud</li><li>All in Google: Pixel phone, Chromebook, Google Workspace (not a fan of Google’s free software offering due to privacy stuff)</li></ul><p>Additionally, I’ve usually bought/subscribed to other hardware/software by Apple/Google.</p><p>Right now, I’m in my longest streak (I think going on 5th year) in one ecosystem. Currently, that’s Apple’s, for which I’m heavily (and quite happily) heavily invested in.</p><p>In the past few years, I’ve become (even) more and different ways interested in tech. Especially privacy related matters and open/source software has become a big new interest of mine.</p><p>As a result, I’ve noticed there might be other options as well in for my hardware and software needs. That being said, I’d be really interested in trying the following setup:</p>
+<ul><li>Framework laptop with Linux</li><li>Pixel phone flashed with GrapheneOS</li><li>Managed Nextcloud hosting or Synology at home for storing and syncing data (files, contacts, calendar, tasks, notes etc.)</li></ul><p>I have some reservations/concerns/questions for this setup:</p><ul><li>Is any fitness / health tracker compatible with GrapheneOS?</li><li>Can GrapheneOS be used as a daily (and only) driver?</li><li>Is Nextcloud good or shit? It seems popular in the open-source community, but at the same time, people often seem to think it is garbage.</li><li>Is Synology / NAS a poor choice for a home with (regularly shitty) 4G internet connection?</li></ul><p>All this goes either facts that Framework is not shipping to Finland and I have never used GrapheneOS or anything by Synology. I have played around with Nextcloud a bit via Hetzner’s Storage Share managed hosting.</p><p>In any case, the possible switch and migration to an entirely new setup would feel and be much more laborious than before. As said, not only I’m currently deeper in the Apple ecosystem than ever with family sharing and employer-provided hardware, I have much less spare time on my hands to pull off these kinds of stunts in a timely manner.</p>
 
 		</div>
 	  </div>
@@ -199,7 +241,9 @@
 		<a href="https://nikokultalahti.com/2023/11/08/my-default-apps-late/" class="u-url"><time class="dt-published" datetime="2023-11-08 12:17:53 &#43;0300">Nov 8, 2023</time></a>
 
 		<div class="e-content">
-			 <!-- raw HTML omitted -->
+			 <p>There seems to be quite <a href="https://defaults.rknight.me/">a trend going on with people listing their default apps</a>. Apparently it all got started from a podcast episode <a href="https://listen.hemisphericviews.com/097">Duel of the Defaults by Hemispheric Views</a>. I must admit I have yet to listen this episode but I will definitely get to it.</p><p>I wanted to jump in this trend myself so here's my current (as of November 2023) list of my default apps for various categories. Personally I am heavily invested in Apple ecosystem, however at work we use Google Workspace. I've listed the apps I use both personally and at work in categories where it makes sense.</p><ul><li><strong>Mail Client</strong>: Mail.app (at work Gmail)</li><li><strong>Mail Server</strong>: iCloud with custom domain (at work Gmail)</li><li><strong>Notes</strong>: Notes.app (at work Google Keep)</li><li><strong>To-Do</strong>: Reminders.app (at work <a href="https://monday.com">monday.com</a>)</li><li><strong>iPhone Photo Shooting</strong>: Camera.app</li><li><strong>Photo Management</strong>: Photos.app</li><li><strong>Calendar</strong>: Calendar.app (at work Google Calendar)</li><li><strong>Cloud File Storage</strong>: iCloud (at work Google Drive)</li><li><strong>RSS</strong>: <a href="https://www.reederapp.com">Reeder 5</a> with iCloud as backend (recently migrated from <a href="https://betamagic.nl/products/newsexplorer.html">News Explorer</a>)</li><li><strong>Contacts</strong>: Contacts.app</li><li><strong>Browser</strong>: Safari, Chrome for development (and at work)</li><li><strong>Chat</strong>: <a href="https://signal.org">Signal</a>, <a href="https://telegram.org">Telegram</a>, iMessage (at work <a href="https://slack.com" rel="noreferrer">Slack</a>)</li><li><strong>Bookmarks</strong>: Safari bookmarks (at work Chrome bookmarks)</li><li><strong>Read It Later</strong>: <a href="https://www.reederapp.com">Reeder 5</a> (recently migrated from <a href="https://goodlinks.app">Goodlinks</a>)</li><li><strong>Word Processing</strong>: <a href="https://ia.net/writer">iA Writer</a> & Apple Pages (at work Google Docs)</li><li><strong>Spreadsheets</strong>: Apple Numbers (at work Google Sheets)</li><li><strong>Presentations</strong>: n/a (at work Google Slides)</li><li><strong>Shopping Lists</strong>: Shared Reminders List via <a href="https://mela.recipes">Mela</a></li><li><strong>Meal Planning</strong>: n/a</li><li><strong>Personal Finance</strong>: n/a</li><li><strong>Budgeting</strong>: n/a</li><li><strong>News</strong>: RSS, Mastodon</li><li><strong>Music</strong>: Apple Music</li><li><strong>Podcasts</strong>: Apple Podcast</li><li><strong>Password Management</strong>: <a href="https://1password.com">1Password</a> (recently migrated from <a href="https://bitwarden.com">Bitwarden</a>)</li></ul>
+<p>There are few categories I would like to add:</p>
+<ul><li><strong>Weather</strong>: Weather.app</li><li><strong>Mastodon</strong>: <a href="https://mastodon.social/@MonaApp">Mona</a></li><li><strong>Launcher</strong>: <a href="https://www.raycast.com">Raycast</a></li><li><strong>Terminal</strong>: <a href="https://iterm2.com">iTerm 2</a></li><li><strong>Code Editor</strong>: <a href="https://vscodium.com">VSCodium</a></li><li><strong>Search</strong>: <a href="https://duckduckgo.com">DuckDuckGo</a> (at work Google)</li><li><strong>Backup</strong>: <a href="https://www.arqbackup.com">Arq Backup</a> (currently trialing)</li><li><strong>VPN</strong>: <a href="https://mullvad.net/en">Mullvad</a> and <a href="https://tailscale.com/" rel="noreferrer">Tailscale</a></li></ul><p>As you can see, I'm quite heavily using the default apps where I can. In other categories I've tried to find the apps that work the best for me.</p>
 
 		</div>
 	  </div>
@@ -212,7 +256,11 @@
 		<a href="https://nikokultalahti.com/2023/11/05/on-subscriptions/" class="u-url"><time class="dt-published" datetime="2023-11-05 14:15:00 &#43;0300">Nov 5, 2023</time></a>
 
 		<div class="e-content">
-			 <!-- raw HTML omitted -->
+			 <p>Manuel Moreale <a href="https://manuelmoreale.com/on-subscriptions">wrote about his subscriptions</a> and said:</p><p>I'd be curious to see other people's breakdowns so if you do end up writing about your situation let me know.</p><p>Encouraged by this <a href="https://kevquirk.com/on-subscriptions">Kev Quirk</a> and <a href="https://jlelse.blog/posts/on-subscriptions">Jan-Lukas Else</a> wrote about their subscriptions. After reading their posts I decided to throw my hat in the ring as well.</p><p>As a disclaimer I'll say that I won't be including <strong>all</strong> recurring expenses here, such as insurance payments, my contribution to joint bank account with my wife, loan payments, utilities and so on. I'll focus mainly on tools/services/products that I have decided to invest in as I find value in them, rather than out of necessity. That being said, here we go.</p><h3 id="family">Family</h3><ul><li>iCloud+ 200GB<ul><li>‌<strong>Cost</strong>: 2,99 € / month</li><li>Both me and my wife save everything to iCloud, as do my parents with their photos. 200GB has been enough for us (for now)</li></ul></li><li>Apple Music Family<ul><li><strong>Cost</strong>: 19 € / month</li><li>Our music streaming service of choice, mainly due to my & wife being invested in Apple ecosystem and my dislike of Spotify for trying to be everything</li></ul></li></ul>
+<h3 id="tech">Tech</h3>
+<ul><li>Bitwarden<ul><li><strong>Cost</strong>: 8,20 € / year = 0,68 € / month</li><li>I consider password manager an essential tool and something I happily invest in. It holds so crucial and valuable information I want something that is platform-agnostic (for which reason iCloud Keychain is not an option). I've lately been thinking about migrating to 1Password as Bitwarden app both on my Mac and iPhone has started to behave weirdly.</li></ul></li><li>SimpleLogin<ul><li><strong>Cost</strong>: 28 € / year = 2,3 € / month</li><li>I consider this almost as essential of a tool as a password manager. SimpleLogin allows me to have unique email address for all the different services/tools and places where I need to provide an email address</li></ul></li><li>Mullvad VPN<ul><li><strong>Cost</strong>: 5 € / month</li><li>For secure connection in unsecure networks and to circumvent certain geographical restrictions around content</li></ul></li><li>Hetzner VPS<ul><li><strong>Cost</strong>: 4,70 € / month</li><li><a href="__GHOST_URL__/posts/back-to-ghost-cms/">As I wrote previously</a>, this website is now running on Ghost CMS hosted on Hetzner. On the same server I host privacy-focused Plausible Analytics to help me understand if anyone else rather than me is reading these words.</li></ul></li></ul><h3 id="entertainment">Entertainment</h3><ul><li>Netflix<ul><li><strong>Cost</strong>: 15,99 € / month</li><li>Our current media streaming service of choice. We have a rule in our house that we have only one such subscription active at the time. The reason for the rule is that having multiple services racks up to a good amount of money quickly and we do not have <strong>that much</strong> time available to watch entertainment that it would warrant such costs.</li></ul></li><li>Playstation Plus<ul><li><strong>Cost</strong>: 59,95 / year = 4,99 € / month</li><li>Gaming has always been a big hobby of mine, however the older I've gotten (and with more responsiblities) I have less time for gaming. For that reason I mostly play story-focused single-player games nowadays, for which reason I am likely not renewing this subscription when it lapses.</li></ul></li></ul>
+<h3 id="other">Other</h3>
+<ul><li>Training Today<ul><li><strong>Cost</strong>: 9,99 € / year = 0,83 € / month</li><li>A tool for Apple watch which allows me better to evaluate my recovery and performance (based on data). This is something I used when I exercised more regularly. I <strong>still</strong> have work to do to get back on the regular exercising schedule/regimen after we got our baby boy last year. I am not renewing this subscription when it lapses, as I first need to master (again) the basics of regular exercising.</li></ul></li><li>Athlytics Pro<ul><li><strong>Cost</strong>: 31,99 € / year = 2,66 € / month</li><li>Similar tool to Training Today but with more information related to recovery and training. Similar situation as above with Training Today.</li></ul></li></ul><h2 id="conclusion">Conclusion</h2><p>There we have it. If my math holds up, all the above sums approximately to 37 € per month, which is around 444 € per year.</p><p>Having read about other people subscriptions and discussed with friends, I think the amount of subscriptions I have and their costs is quite modest. Still, as said, I think there's some services/tools that I can drop without causing any significant drop to the quality of my life.</p>
 
 		</div>
 	  </div>
@@ -374,7 +422,7 @@ dtoverlay=disable-bt  <br>
 <li>Add local user to receive notifications by changing the line to <code>Unattended-Upgrade: :Mail &quot;&lt;username&gt;&quot;;</code></li>
 </ul>
 </li>
-<li>Set periodic upgrades with `sudo nano /etc/apt/apt.conf.d/02periodic<!-- raw HTML omitted --> and paste the following (the file should be empty) to enable automatic daily updates:</li>
+<li>Set periodic upgrades with `sudo nano /etc/apt/apt.conf.d/02periodic</code> and paste the following (the file should be empty) to enable automatic daily updates:</li>
 </ol>
 <p><code>APT::Periodic::Enable “1”;    APT::Periodic::Update-Package-Lists “1”;    APT::Periodic::Download-Upgradeable-Packages “1”;    APT::Periodic::Unattended-Upgrade “1”;    APT::Periodic::AutocleanInterval “1”;    APT::Periodic::Verbose “2”;</code></p>
 <h2 id="remote-access">Remote access</h2>
@@ -621,7 +669,7 @@ I forgot to follow and keep track of activities I set for this year, for which r
 		<div class="e-content">
 			 <p>Simple enough. Often easier said than done though.</p>
 <p><em>&ldquo;Don’t speak unnecessarily. When speaking, think carefully and be concise. Be honest but kind.”</em>
-<!-- raw HTML omitted --><a href="https://rebeccatoh.co/the-art-of-speaking">– Rebeka Toh, The Art of Speaking</a></p>
+<br><a href="https://rebeccatoh.co/the-art-of-speaking">– Rebeka Toh, The Art of Speaking</a></p>
 
 		</div>
 	  </div>
@@ -686,9 +734,27 @@ Dark times indeed.</p>
 		<a href="https://nikokultalahti.com/2019/11/11/day-challenge-no-added-sugar/" class="u-url"><time class="dt-published" datetime="2019-11-11 15:48:00 &#43;0300">Nov 11, 2019</time></a>
 
 		<div class="e-content">
-			 <!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+			 <!--kg-card-begin: html-->
+<p><!--kg-card-begin: html--></p>
+<p>I recently did a 30-day challenge, during which I didn’t eat nor drink anything that contained any of the following:</p>
+<ul>
+<li>added sugar</li>
+<li>cyrup</li>
+<li>honey</li>
+</ul>
+<p>To clarify, eating fruit and berries was completely OK even though they contain fructose.</p>
+<p>Here’s what I found our during and after the 30 days:</p>
+<ol>
+<li>It was not <strong>that</strong> much of a challenge to refrain from eating sweets</li>
+<li>Surprisingly many thing you can buy from a grocery store has added sugar in it</li>
+<li>Avoiding added sugar lowered body weight and reduced body-fat a little bit</li>
+<li>I felt a bit better (both about myself and the way I live, as well as in terms of energy) during the challenge</li>
+</ol>
+<p>The best finding though was that I do not grave for sweets as much as I did before the challenge. In fact, eating sweets does seem to easily make me feel a bit nauseated.</p>
+<p>I have ended up paying more attention to my sugar consumption after the challenge. However, I have not completely cut added sugar out of my life as I occasionally do allow myself having, for example, some chocolate. I feel this is <strong>for me</strong> a more sensible and easier approach to maintain than 100 % avoidance of sweets for the rest of my life.</p>
+<p>Good is better than perfect.</p>
+<p><!--kg-card-end: html--></p>
+<!--kg-card-end: html-->
 
 		</div>
 	  </div>
