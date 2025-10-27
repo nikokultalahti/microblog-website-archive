@@ -7,11 +7,20 @@
 	"items": [
 		
 			{
+				"id": "http://nikokultalahti.micro.blog/2025/10/27/i-was-wondering-that-the/",
+				
+				"content_html": "<p>I was wondering that the hell is wrong with my internet connection. It was sluggish and threw errors every now and then. Turned out the issue was (as always) DNS.</p>\n<p>One of the DNS servers I was using has been discontinued (dns0.eu). As I also had AdGuard on my router to out parallel request to all specified DNS servers, one can see why there might have been issues.</p>\n",
+				"content_text": "I was wondering that the hell is wrong with my internet connection. It was sluggish and threw errors every now and then. Turned out the issue was (as always) DNS. \n\nOne of the DNS servers I was using has been discontinued (dns0.eu). As I also had AdGuard on my router to out parallel request to all specified DNS servers, one can see why there might have been issues.\n",
+				"date_published": "2025-10-27T10:55:32+02:00",
+				"url": "https://nikokultalahti.com/2025/10/27/i-was-wondering-that-the/",
+				"tags": ["Notes"]
+			},
+			{
 				"id": "http://nikokultalahti.micro.blog/2025/10/25/im-really-consider-buying-myself/",
 				
 				"content_html": "<p>I’m really consider buying myself a split keyboard. That would also be my first mechanical keyboard.</p>\n<p>Any suggestions for a good keyboard for someone in my situation? Or tips to take into consideration?</p>\n<p>#keyboard</p>\n",
 				"content_text": "I’m really consider buying myself a split keyboard. That would also be my first mechanical keyboard. \n\nAny suggestions for a good keyboard for someone in my situation? Or tips to take into consideration?\n\n#keyboard\n",
-				"date_published": "2025-10-25T23:58:14+03:00",
+				"date_published": "2025-10-25T22:58:14+02:00",
 				"url": "https://nikokultalahti.com/2025/10/25/im-really-consider-buying-myself/",
 				"tags": ["Notes"]
 			},
@@ -20,7 +29,7 @@
 				"title": "Migrating from Wallabag to Karakeep",
 				"content_html": "<p>Today, I migrated my read-later list (and archived links) from <a href=\"https://wallabag.org/\">Wallabag</a> to <a href=\"https://karakeep.app/\">Karakeep</a>.</p>\n<p>I self-host both of these applications on my Synology DS224+ NAS.</p>\n<p>It turned out, that migrating the links from Wallabag to Karakeep is not as straight-forward as exporting from Wallabag and importing into Karakeep. The reason being that there were no file-format that Wallabag could export to that could be imported to Karakeep.</p>\n<p>What I ended up doing is exporting the links from Wallabag as json, converting that to html and importing that into Karakeep. Worked flawlessly.</p>\n<p>From <a href=\"https://github.com/karakeep-app/karakeep/discussions/581\">this discussion on GitHub</a> I found <a href=\"https://github.com/axilleas\">axilleas comment</a> that included a ruby script that I used to do the conversion.</p>\n<p>I&rsquo;m using <a href=\"https://projectbluefin.io/\">Bluefin</a> on my <a href=\"https://frame.work/fi/en/laptop13\">Framework 13 laptop</a> so here&rsquo;s what I did step-by-step:</p>\n<ol>\n<li>Exported the links from Wallabag as json file into a folder on my computer (let&rsquo;s say <code>~/Temp)</code> and renamed the file as archived_links.json</li>\n<li>Spun up Ubuntu container using Distroshelf</li>\n<li>Used terminal to enter the container, updated it and installed ruby (and nano) with <code>sudo apt-get update &amp;&amp; sudo apt-get install ruby-full nano</code></li>\n<li>The way Distroshelf works (at least on Bluefin) is that it mounts my home folder to any created container, so I only had to run <code>cd ~/Temp</code> to enter the folder with the exported file</li>\n<li>I created a new file with <code>touch wallabag-json-to-html-karakeep.rb</code></li>\n<li>I opened the file with <code>nano wallabag-json-to-html-karakeep.rb</code> and pasted the code from the link above into it, saved and closed the file</li>\n<li>I ran <code>ruby wallabag-json-to-html-karakeep.rb archived_links.json archived_links.html</code></li>\n</ol>\n<p>That&rsquo;s it. A new file was created, which could be imported (successfully) into Karakeep. I <a href=\"https://gist.github.com/nikokultalahti/29ac6869176491bd9b761a8a0503b9a9\">created a gist of the code</a>, which hopefully makes it a bit more accessible than browsing through GitHub discussions. As said, credits for the code goes to <a href=\"https://github.com/axilleas\">axilleas on GitHub</a>.</p>\n",
 				"content_text": "Today, I migrated my read-later list (and archived links) from [Wallabag](https://wallabag.org/) to [Karakeep](https://karakeep.app/).\n\nI self-host both of these applications on my Synology DS224+ NAS.\n\nIt turned out, that migrating the links from Wallabag to Karakeep is not as straight-forward as exporting from Wallabag and importing into Karakeep. The reason being that there were no file-format that Wallabag could export to that could be imported to Karakeep.\n\nWhat I ended up doing is exporting the links from Wallabag as json, converting that to html and importing that into Karakeep. Worked flawlessly.\n\nFrom [this discussion on GitHub](https://github.com/karakeep-app/karakeep/discussions/581) I found [axilleas comment](https://github.com/axilleas) that included a ruby script that I used to do the conversion.\n\nI'm using [Bluefin](https://projectbluefin.io/) on my [Framework 13 laptop](https://frame.work/fi/en/laptop13) so here's what I did step-by-step:\n\n1. Exported the links from Wallabag as json file into a folder on my computer (let's say `~/Temp)` and renamed the file as archived_links.json\n2. Spun up Ubuntu container using Distroshelf\n3. Used terminal to enter the container, updated it and installed ruby (and nano) with `sudo apt-get update && sudo apt-get install ruby-full nano`\n4. The way Distroshelf works (at least on Bluefin) is that it mounts my home folder to any created container, so I only had to run `cd ~/Temp` to enter the folder with the exported file\n5. I created a new file with `touch wallabag-json-to-html-karakeep.rb`\n6. I opened the file with `nano wallabag-json-to-html-karakeep.rb` and pasted the code from the link above into it, saved and closed the file\n7. I ran `ruby wallabag-json-to-html-karakeep.rb archived_links.json archived_links.html`\n\nThat's it. A new file was created, which could be imported (successfully) into Karakeep. I [created a gist of the code](https://gist.github.com/nikokultalahti/29ac6869176491bd9b761a8a0503b9a9), which hopefully makes it a bit more accessible than browsing through GitHub discussions. As said, credits for the code goes to [axilleas on GitHub](https://github.com/axilleas).\n",
-				"date_published": "2025-08-28T19:47:37+03:00",
+				"date_published": "2025-08-28T18:47:37+02:00",
 				"url": "https://nikokultalahti.com/2025/08/28/migrating-from-wallabag-to-karakeep/",
 				"tags": ["Posts"]
 			},
@@ -29,7 +38,7 @@
 				
 				"content_html": "<p>Decided to give Karakeep a try after previously using Wallabag. Seems that it’s  not possible to just export-import the links between these apps. Likely some json to html is needed. #selfhosting</p>\n",
 				"content_text": "Decided to give Karakeep a try after previously using Wallabag. Seems that it’s  not possible to just export-import the links between these apps. Likely some json to html is needed. #selfhosting\n",
-				"date_published": "2025-08-28T05:05:58+03:00",
+				"date_published": "2025-08-28T04:05:58+02:00",
 				"url": "https://nikokultalahti.com/2025/08/28/decided-to-give-karakeep-a/",
 				"tags": ["Notes"]
 			},
@@ -38,7 +47,7 @@
 				
 				"content_html": "<p>I see <a href=\"https://ghost.org/changelog/6/\">Ghost 6.0</a> has been launched, with highly anticipated ActivityPub support.</p>\n<p>I need to have a closer look at Ghost yet again.</p>\n<p>In any case, a big achievement - congrats to the whole team at Ghost.</p>\n",
 				"content_text": "I see [Ghost 6.0](https://ghost.org/changelog/6/) has been launched, with highly anticipated ActivityPub support. \n\nI need to have a closer look at Ghost yet again.  \n\nIn any case, a big achievement - congrats to the whole team at Ghost. \n",
-				"date_published": "2025-08-05T00:37:58+03:00",
+				"date_published": "2025-08-04T23:37:58+02:00",
 				"url": "https://nikokultalahti.com/2025/08/05/i-see-ghost-has-been/",
 				"tags": ["Notes"]
 			},
@@ -47,7 +56,7 @@
 				
 				"content_html": "<p>Spent the last night in tent. Being a somewhat restless sleeper, finally found a sleeping pad that I can fall asleep and sleep comfortably on.</p>\n<p>Time to start planning some overnight hiking route now that sleeping stuff is under control.</p>\n",
 				"content_text": "Spent the last night in tent. Being a somewhat restless sleeper, finally found a sleeping pad that I can fall asleep and sleep comfortably on. \n\nTime to start planning some overnight hiking route now that sleeping stuff is under control. \n",
-				"date_published": "2025-07-27T09:09:35+03:00",
+				"date_published": "2025-07-27T08:09:35+02:00",
 				"url": "https://nikokultalahti.com/2025/07/27/spent-the-last-night-in/",
 				"tags": ["Notes"]
 			},
@@ -56,7 +65,7 @@
 				
 				"content_html": "<p>My old EOL Chromebook just got a new life as I completely removed ChromeOS from the device and installed Linux onto it. I had to open the device and remove the write protection screw in order to being able to flash a new firmware on it. Everything went smoothly and now I have a spare laptop.</p>\n",
 				"content_text": "My old EOL Chromebook just got a new life as I completely removed ChromeOS from the device and installed Linux onto it. I had to open the device and remove the write protection screw in order to being able to flash a new firmware on it. Everything went smoothly and now I have a spare laptop.\n",
-				"date_published": "2025-06-18T06:17:47+03:00",
+				"date_published": "2025-06-18T05:17:47+02:00",
 				"url": "https://nikokultalahti.com/2025/06/18/my-old-eol-chromebook-just/",
 				"tags": ["Notes"]
 			},
