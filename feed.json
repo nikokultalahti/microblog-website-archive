@@ -7,6 +7,15 @@
 	"items": [
 		
 			{
+				"id": "http://nikokultalahti.micro.blog/2026/06/09/ok-selfhosted-forgejo-instance-set/",
+				
+				"content_html": "<p>OK, self-hosted Forgejo instance set up. Time to start migrate some repositories off from Github.</p>\n",
+				"content_text": "OK, self-hosted Forgejo instance set up. Time to start migrate some repositories off from Github.\n",
+				"date_published": "2026-06-09T09:34:15+03:00",
+				"url": "https://nikokultalahti.com/2026/06/09/ok-selfhosted-forgejo-instance-set/",
+				"tags": ["Notes"]
+			},
+			{
 				"id": "http://nikokultalahti.micro.blog/2025/12/19/has-anyone-successfully-activated-an/",
 				
 				"content_html": "<p>Has anyone successfully activated an eSIM on GrapheneOS? I&rsquo;m struggling to get DNA&rsquo;s (Finnish provider) activated; I get hit with &ldquo;Can&rsquo;t set up eSIM&rdquo; error after reading the QR-code or manually inputting the code. #grapheneos</p>\n",
