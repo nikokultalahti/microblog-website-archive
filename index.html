@@ -25,7 +25,51 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2026/06/09/ok-selfhosted-forgejo-instance-set/" class="u-url"><time class="dt-published" datetime="2026-06-09 06:34:15 &#43;0000">Jun 9, 2026</time></a>
+		<a href="https://nikokultalahti.com/2026/06/19/at-the-summer-cabin-for/" class="u-url"><time class="dt-published" datetime="2026-06-19 12:15:49 &#43;0300">Jun 19, 2026</time></a>
+
+		<div class="e-content">
+			 <p>At the summer cabin for Midsummer! Weather happened to be lovely.  ☀️</p>
+<!-- raw HTML omitted -->
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+
+		<a href="https://nikokultalahti.com/2026/06/15/today-our-now-year-old/" class="u-url"><time class="dt-published" datetime="2026-06-15 22:37:25 &#43;0300">Jun 15, 2026</time></a>
+
+		<div class="e-content">
+			 <p>Today our now 4 year old had a birthday party for 11 of his friends. Oh god what a fucking mayhem that was.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+
+		<a href="https://nikokultalahti.com/2026/06/15/i-was-having-an-issue/" class="u-url"><time class="dt-published" datetime="2026-06-15 13:48:21 &#43;0300">Jun 15, 2026</time></a>
+
+		<div class="e-content">
+			 <p>I was having an issue with Ghostty when SSH&rsquo;ing into a server When I hit backspace it inputted a normal space instead.</p>
+<p>Apparently, this might be expected and has something to do with terminal emulation and preserving some environmental variables such as <code>TERM</code>. Here&rsquo;s more info about it: <a href="https://ghostty.org/docs/help/terminfo">https://ghostty.org/docs/help/terminfo</a></p>
+<p>I bumbed into this issue when I used <code>gcloud compute ssh</code> to SSH into a VM in Google Cloud. I fixed this by setting the following in <code>.zshrc</code>:</p>
+<pre tabindex="0"><code>gcloud() {
+    # Detects if 'compute ssh' is invoked anywhere in the command arguments
+    if [[ &quot;$*&quot; == *&quot;compute ssh&quot;* ]]; then
+        TERM=xterm-256color command gcloud &quot;$@&quot;
+    else
+        command gcloud &quot;$@&quot;
+    fi
+} 
+</code></pre>
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+
+		<a href="https://nikokultalahti.com/2026/06/09/ok-selfhosted-forgejo-instance-set/" class="u-url"><time class="dt-published" datetime="2026-06-09 09:34:15 &#43;0300">Jun 9, 2026</time></a>
 
 		<div class="e-content">
 			 <p>OK, self-hosted Forgejo instance set up. Time to start migrate some repositories off from Github.</p>
@@ -36,7 +80,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/12/19/has-anyone-successfully-activated-an/" class="u-url"><time class="dt-published" datetime="2025-12-19 21:50:47 &#43;0000">Dec 19, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/12/19/has-anyone-successfully-activated-an/" class="u-url"><time class="dt-published" datetime="2025-12-20 00:50:47 &#43;0300">Dec 20, 2025</time></a>
 
 		<div class="e-content">
 			 <p>Has anyone successfully activated an eSIM on GrapheneOS? I&rsquo;m struggling to get DNA&rsquo;s (Finnish provider) activated; I get hit with &ldquo;Can&rsquo;t set up eSIM&rdquo; error after reading the QR-code or manually inputting the code. #grapheneos</p>
@@ -49,7 +93,7 @@
 			<h1><a href="https://nikokultalahti.com/2025/12/09/businessman-vs-fisherman/">Businessman vs Fisherman</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2025/12/09/businessman-vs-fisherman/" class="u-url"><time class="dt-published" datetime="2025-12-09 13:37:43 &#43;0000">Dec 9, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/12/09/businessman-vs-fisherman/" class="u-url"><time class="dt-published" datetime="2025-12-09 16:37:43 &#43;0300">Dec 9, 2025</time></a>
 
 		<div class="e-content">
 			 <p>Love it.</p>
@@ -70,7 +114,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/12/08/the-fuck-is-this-shit/" class="u-url"><time class="dt-published" datetime="2025-12-08 07:39:36 &#43;0000">Dec 8, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/12/08/the-fuck-is-this-shit/" class="u-url"><time class="dt-published" datetime="2025-12-08 10:39:36 &#43;0300">Dec 8, 2025</time></a>
 
 		<div class="e-content">
 			 <p>The fuck is this shit&hellip; I&rsquo;m trying to delete my Disney+ account but I&rsquo;m greeted with this window, now matter what URL I try to use to access my profile/account settings page.</p>
@@ -83,7 +127,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/12/03/apparently-finland-has-now-turned/" class="u-url"><time class="dt-published" datetime="2025-12-03 14:51:18 &#43;0000">Dec 3, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/12/03/apparently-finland-has-now-turned/" class="u-url"><time class="dt-published" datetime="2025-12-03 17:51:18 &#43;0300">Dec 3, 2025</time></a>
 
 		<div class="e-content">
 			 <p>Apparently Finland has now turned to support the shit that is Chat Control proposal. I’m so fucking disappointed.</p>
@@ -95,7 +139,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/11/29/i-enjoyed-this-list-about/" class="u-url"><time class="dt-published" datetime="2025-11-29 16:07:38 &#43;0000">Nov 29, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/11/29/i-enjoyed-this-list-about/" class="u-url"><time class="dt-published" datetime="2025-11-29 19:07:38 &#43;0300">Nov 29, 2025</time></a>
 
 		<div class="e-content">
 			 <p>I enjoyed <a href="https://interconnected.org/home/2020/09/10/streak">this list about 15 rules of blogging</a>, especially rule 2:</p>
@@ -111,7 +155,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/11/15/introducing-ai-the-firefox-way/" class="u-url"><time class="dt-published" datetime="2025-11-15 01:00:49 &#43;0300">Nov 15, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/11/15/introducing-ai-the-firefox-way/" class="u-url"><time class="dt-published" datetime="2025-11-14 22:00:49 &#43;0000">Nov 14, 2025</time></a>
 
 		<div class="e-content">
 			 <p><a href="https://blog.mozilla.org/en/firefox/ai-window/">Introducing AI, the Firefox way: A look at what we&rsquo;re working on and how you can help shape it</a></p>
@@ -123,7 +167,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/11/05/so-i-went-ahead-and/" class="u-url"><time class="dt-published" datetime="2025-11-06 00:35:29 &#43;0300">Nov 6, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/11/05/so-i-went-ahead-and/" class="u-url"><time class="dt-published" datetime="2025-11-05 21:35:29 &#43;0000">Nov 5, 2025</time></a>
 
 		<div class="e-content">
 			 <p>So I went ahead and bought ZSA Voyager keyboard. I can already tell it&rsquo;s going to be quite a challenge to get accustomed to this. I can barely find any keys I need.</p>
@@ -134,7 +178,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/11/02/im-looking-for-a-usbc/" class="u-url"><time class="dt-published" datetime="2025-11-02 15:52:00 &#43;0300">Nov 2, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/11/02/im-looking-for-a-usbc/" class="u-url"><time class="dt-published" datetime="2025-11-02 12:52:00 &#43;0000">Nov 2, 2025</time></a>
 
 		<div class="e-content">
 			 <p>I’m looking for a USB-C hub/switch kind of thing.</p>
@@ -151,7 +195,7 @@
 			<h1><a href="https://nikokultalahti.com/2025/10/28/ten-pointless-facts-about-me/">Ten pointless facts about me</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2025/10/28/ten-pointless-facts-about-me/" class="u-url"><time class="dt-published" datetime="2025-10-28 21:53:49 &#43;0300">Oct 28, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/10/28/ten-pointless-facts-about-me/" class="u-url"><time class="dt-published" datetime="2025-10-28 18:53:49 &#43;0000">Oct 28, 2025</time></a>
 
 		<div class="e-content">
 			 <p>A few people (such as <a href="https://jlelse.blog/posts/ten-pointless-facts">Jan-Lukas</a>, <a href="https://kevquirk.com/blog/ten-pointless-facts-about-me/">Kev</a> and <a href="https://manuelmoreale.com/thoughts/10-pointless-facts-about-me">Manuel</a>) I follow recently posted then pointless facts about them. I thought I&rsquo;d follow suit.</p>
@@ -172,7 +216,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/10/27/i-was-wondering-that-the/" class="u-url"><time class="dt-published" datetime="2025-10-27 11:55:32 &#43;0300">Oct 27, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/10/27/i-was-wondering-that-the/" class="u-url"><time class="dt-published" datetime="2025-10-27 08:55:32 &#43;0000">Oct 27, 2025</time></a>
 
 		<div class="e-content">
 			 <p>I was wondering that the hell is wrong with my internet connection. It was sluggish and threw errors every now and then. Turned out the issue was (as always) DNS.</p>
@@ -184,7 +228,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/10/25/im-really-consider-buying-myself/" class="u-url"><time class="dt-published" datetime="2025-10-25 23:58:14 &#43;0300">Oct 25, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/10/25/im-really-consider-buying-myself/" class="u-url"><time class="dt-published" datetime="2025-10-25 20:58:14 &#43;0000">Oct 25, 2025</time></a>
 
 		<div class="e-content">
 			 <p>I’m really consider buying myself a split keyboard. That would also be my first mechanical keyboard.</p>
@@ -199,7 +243,7 @@
 			<h1><a href="https://nikokultalahti.com/2025/08/28/migrating-from-wallabag-to-karakeep/">Migrating from Wallabag to Karakeep</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2025/08/28/migrating-from-wallabag-to-karakeep/" class="u-url"><time class="dt-published" datetime="2025-08-28 19:47:37 &#43;0300">Aug 28, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/08/28/migrating-from-wallabag-to-karakeep/" class="u-url"><time class="dt-published" datetime="2025-08-28 16:47:37 &#43;0000">Aug 28, 2025</time></a>
 
 		<div class="e-content">
 			 <p>Today, I migrated my read-later list (and archived links) from <a href="https://wallabag.org/">Wallabag</a> to <a href="https://karakeep.app/">Karakeep</a>.</p>
@@ -225,7 +269,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/08/28/decided-to-give-karakeep-a/" class="u-url"><time class="dt-published" datetime="2025-08-28 05:05:58 &#43;0300">Aug 28, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/08/28/decided-to-give-karakeep-a/" class="u-url"><time class="dt-published" datetime="2025-08-28 02:05:58 &#43;0000">Aug 28, 2025</time></a>
 
 		<div class="e-content">
 			 <p>Decided to give Karakeep a try after previously using Wallabag. Seems that it’s  not possible to just export-import the links between these apps. Likely some json to html is needed. #selfhosting</p>
@@ -236,7 +280,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/08/05/i-see-ghost-has-been/" class="u-url"><time class="dt-published" datetime="2025-08-05 00:37:58 &#43;0300">Aug 5, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/08/05/i-see-ghost-has-been/" class="u-url"><time class="dt-published" datetime="2025-08-04 21:37:58 &#43;0000">Aug 4, 2025</time></a>
 
 		<div class="e-content">
 			 <p>I see <a href="https://ghost.org/changelog/6/">Ghost 6.0</a> has been launched, with highly anticipated ActivityPub support.</p>
@@ -249,7 +293,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/07/27/spent-the-last-night-in/" class="u-url"><time class="dt-published" datetime="2025-07-27 09:09:35 &#43;0300">Jul 27, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/07/27/spent-the-last-night-in/" class="u-url"><time class="dt-published" datetime="2025-07-27 06:09:35 &#43;0000">Jul 27, 2025</time></a>
 
 		<div class="e-content">
 			 <p>Spent the last night in tent. Being a somewhat restless sleeper, finally found a sleeping pad that I can fall asleep and sleep comfortably on.</p>
@@ -261,7 +305,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/06/18/my-old-eol-chromebook-just/" class="u-url"><time class="dt-published" datetime="2025-06-18 06:17:47 &#43;0300">Jun 18, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/06/18/my-old-eol-chromebook-just/" class="u-url"><time class="dt-published" datetime="2025-06-18 03:17:47 &#43;0000">Jun 18, 2025</time></a>
 
 		<div class="e-content">
 			 <p>My old EOL Chromebook just got a new life as I completely removed ChromeOS from the device and installed Linux onto it. I had to open the device and remove the write protection screw in order to being able to flash a new firmware on it. Everything went smoothly and now I have a spare laptop.</p>
@@ -272,7 +316,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/06/11/im-likely-looking-to-switch/" class="u-url"><time class="dt-published" datetime="2025-06-11 10:36:42 &#43;0300">Jun 11, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/06/11/im-likely-looking-to-switch/" class="u-url"><time class="dt-published" datetime="2025-06-11 07:36:42 &#43;0000">Jun 11, 2025</time></a>
 
 		<div class="e-content">
 			 <p>I’m likely looking to switch to Android as my next phone (from iPhone). I’m debating between Fairphone and Google Pixel, and GrapheneOS and CalyxOS.</p>
@@ -284,7 +328,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/06/05/just-learned-a-handy-command/" class="u-url"><time class="dt-published" datetime="2025-06-05 14:57:49 &#43;0300">Jun 5, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/06/05/just-learned-a-handy-command/" class="u-url"><time class="dt-published" datetime="2025-06-05 11:57:49 &#43;0000">Jun 5, 2025</time></a>
 
 		<div class="e-content">
 			 <p>Just learned a handy command for getting BigQuery table/view schema to json:</p>
@@ -298,7 +342,7 @@
 			<h1><a href="https://nikokultalahti.com/2025/05/27/new-website-now-hosted-on/">New website, now hosted on micro.blog</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2025/05/27/new-website-now-hosted-on/" class="u-url"><time class="dt-published" datetime="2025-05-27 20:36:41 &#43;0300">May 27, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/05/27/new-website-now-hosted-on/" class="u-url"><time class="dt-published" datetime="2025-05-27 17:36:41 &#43;0000">May 27, 2025</time></a>
 
 		<div class="e-content">
 			 <p>Alright, DNS has propagated, and my domain is now pointing to <a href="https://micro.blog/">micro.blog&rsquo;s</a> servers where this site is hosted. Yay! 🥳</p>
@@ -322,7 +366,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/05/27/am-train-to-helsinki-time/" class="u-url"><time class="dt-published" datetime="2025-05-27 05:03:17 &#43;0300">May 27, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/05/27/am-train-to-helsinki-time/" class="u-url"><time class="dt-published" datetime="2025-05-27 02:03:17 &#43;0000">May 27, 2025</time></a>
 
 		<div class="e-content">
 			 <p>5am train to Helsinki. Time to visit the office once again.</p>
@@ -334,7 +378,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/05/23/mozilla-is-shutting-down-pocketpocket/" class="u-url"><time class="dt-published" datetime="2025-05-23 10:05:04 &#43;0300">May 23, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/05/23/mozilla-is-shutting-down-pocketpocket/" class="u-url"><time class="dt-published" datetime="2025-05-23 07:05:04 &#43;0000">May 23, 2025</time></a>
 
 		<div class="e-content">
 			 <p><a href="https://support.mozilla.org/en-US/kb/future-of-pocket">Mozilla is shutting down Pocket</a>.</p>
@@ -350,7 +394,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2025/05/22/after-a-few-years-giving/" class="u-url"><time class="dt-published" datetime="2025-05-22 23:55:19 &#43;0300">May 22, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/05/22/after-a-few-years-giving/" class="u-url"><time class="dt-published" datetime="2025-05-22 20:55:19 &#43;0000">May 22, 2025</time></a>
 
 		<div class="e-content">
 			 <p>After a few years, giving micro.blog another try. Ghost CMS is too heavy for my use case and I don’t want to manage my own server as I have done so far.</p>
@@ -364,7 +408,7 @@
 			<h1><a href="https://nikokultalahti.com/2025/04/09/fixing-server-misbehaving-error-in/">Fixing &#34;server misbehaving&#34; error in Miniflux</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2025/04/09/fixing-server-misbehaving-error-in/" class="u-url"><time class="dt-published" datetime="2025-04-09 11:29:48 &#43;0300">Apr 9, 2025</time></a>
+		<a href="https://nikokultalahti.com/2025/04/09/fixing-server-misbehaving-error-in/" class="u-url"><time class="dt-published" datetime="2025-04-09 08:29:48 &#43;0000">Apr 9, 2025</time></a>
 
 		<div class="e-content">
 			 <p>I&rsquo;ve been self-hosting <a href="https://miniflux.app/">Miniflux</a> on my Synology NAS (DS224+) using Docker Compose/Container Manager.</p>
@@ -383,7 +427,7 @@
 			<h1><a href="https://nikokultalahti.com/2024/02/22/tech-ecosystem-dilemma/">Tech ecosystem dilemma</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2024/02/22/tech-ecosystem-dilemma/" class="u-url"><time class="dt-published" datetime="2024-02-22 00:43:54 &#43;0300">Feb 22, 2024</time></a>
+		<a href="https://nikokultalahti.com/2024/02/22/tech-ecosystem-dilemma/" class="u-url"><time class="dt-published" datetime="2024-02-21 21:43:54 &#43;0000">Feb 21, 2024</time></a>
 
 		<div class="e-content">
 			 <!-- raw HTML omitted -->
@@ -396,7 +440,7 @@
 			<h1><a href="https://nikokultalahti.com/2023/11/08/my-default-apps-late/">My Default Apps Late 2023</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2023/11/08/my-default-apps-late/" class="u-url"><time class="dt-published" datetime="2023-11-08 12:17:53 &#43;0300">Nov 8, 2023</time></a>
+		<a href="https://nikokultalahti.com/2023/11/08/my-default-apps-late/" class="u-url"><time class="dt-published" datetime="2023-11-08 09:17:53 &#43;0000">Nov 8, 2023</time></a>
 
 		<div class="e-content">
 			 <!-- raw HTML omitted -->
@@ -409,7 +453,7 @@
 			<h1><a href="https://nikokultalahti.com/2023/11/05/on-subscriptions/">On subscriptions</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2023/11/05/on-subscriptions/" class="u-url"><time class="dt-published" datetime="2023-11-05 14:15:00 &#43;0300">Nov 5, 2023</time></a>
+		<a href="https://nikokultalahti.com/2023/11/05/on-subscriptions/" class="u-url"><time class="dt-published" datetime="2023-11-05 11:15:00 &#43;0000">Nov 5, 2023</time></a>
 
 		<div class="e-content">
 			 <!-- raw HTML omitted -->
@@ -420,7 +464,7 @@
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2023/11/02/i-got-the-local-development/" class="u-url"><time class="dt-published" datetime="2023-11-02 22:43:09 &#43;0300">Nov 2, 2023</time></a>
+		<a href="https://nikokultalahti.com/2023/11/02/i-got-the-local-development/" class="u-url"><time class="dt-published" datetime="2023-11-02 19:43:09 &#43;0000">Nov 2, 2023</time></a>
 
 		<div class="e-content">
 			 <p>I got the local development setup for  Ghost working after some difficulties. I have  already made some changes to the theme, uploaded the edited theme in this instance and set everything to GitHub.</p>
@@ -434,7 +478,7 @@
 			<h1><a href="https://nikokultalahti.com/2023/11/01/meta-offering-paid-subscriptions-in/">Meta offering paid subscriptions in EU</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2023/11/01/meta-offering-paid-subscriptions-in/" class="u-url"><time class="dt-published" datetime="2023-11-01 22:56:50 &#43;0300">Nov 1, 2023</time></a>
+		<a href="https://nikokultalahti.com/2023/11/01/meta-offering-paid-subscriptions-in/" class="u-url"><time class="dt-published" datetime="2023-11-01 19:56:50 &#43;0000">Nov 1, 2023</time></a>
 
 		<div class="e-content">
 			 <p>It seems Meta is starting to offer paid subscriptions for Facebook &amp; Instagram in EU due to privacy regulations.</p>
@@ -454,7 +498,7 @@
 			<h1><a href="https://nikokultalahti.com/2023/10/31/back-on-ghost-cms/">Back on Ghost CMS</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2023/10/31/back-on-ghost-cms/" class="u-url"><time class="dt-published" datetime="2023-10-31 19:56:31 &#43;0300">Oct 31, 2023</time></a>
+		<a href="https://nikokultalahti.com/2023/10/31/back-on-ghost-cms/" class="u-url"><time class="dt-published" datetime="2023-10-31 16:56:31 &#43;0000">Oct 31, 2023</time></a>
 
 		<div class="e-content">
 			 <p>It took a few weeks after I remembered why I don’t like Wordpress. That being said, I’m back on Ghost CMS.</p>
@@ -472,7 +516,7 @@
 			<h1><a href="https://nikokultalahti.com/2023/10/24/secure-setup-for-rasperry-pi/">Secure setup for Rasperry Pi</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2023/10/24/secure-setup-for-rasperry-pi/" class="u-url"><time class="dt-published" datetime="2023-10-24 12:48:43 &#43;0300">Oct 24, 2023</time></a>
+		<a href="https://nikokultalahti.com/2023/10/24/secure-setup-for-rasperry-pi/" class="u-url"><time class="dt-published" datetime="2023-10-24 09:48:43 &#43;0000">Oct 24, 2023</time></a>
 
 		<div class="e-content">
 			 <p>This post is a documentation I’ve written for myself for securely set up a new Raspberry Pi. Hopefully it’s some use to someone else as well.</p>
@@ -601,7 +645,7 @@ dtoverlay=disable-bt  <br>
 			<h1><a href="https://nikokultalahti.com/2023/10/02/webbased-tools-from-the-dock/">Web-based tools - from the Dock or as browser tabs?</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2023/10/02/webbased-tools-from-the-dock/" class="u-url"><time class="dt-published" datetime="2023-10-02 19:39:46 &#43;0300">Oct 2, 2023</time></a>
+		<a href="https://nikokultalahti.com/2023/10/02/webbased-tools-from-the-dock/" class="u-url"><time class="dt-published" datetime="2023-10-02 16:39:46 &#43;0000">Oct 2, 2023</time></a>
 
 		<div class="e-content">
 			 <p>I’ve been using Google Workspace tools for several years now mainly due to my work at <a href="https://gappsgroup.com">Gapps</a>. I’ve always struggled with whether to use them from the Dock or as browser tabs on my Macbook. I’ve tried both approaches, but I keep switching between the two approach.</p>
@@ -627,7 +671,7 @@ dtoverlay=disable-bt  <br>
 			<h1><a href="https://nikokultalahti.com/2023/07/28/getting-rasperry-pi-b-to/">Getting Rasperry Pi 4 B to boot from an SSD in USB 3.0 port</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2023/07/28/getting-rasperry-pi-b-to/" class="u-url"><time class="dt-published" datetime="2023-07-28 21:34:44 &#43;0300">Jul 28, 2023</time></a>
+		<a href="https://nikokultalahti.com/2023/07/28/getting-rasperry-pi-b-to/" class="u-url"><time class="dt-published" datetime="2023-07-28 18:34:44 &#43;0000">Jul 28, 2023</time></a>
 
 		<div class="e-content">
 			 <p>Finally got it working. There were quite a few issues along the way but the main revelation came when I noticed that I was able to boot from an USB 2.0 port after all. This helped narrow down the issue and eventually led to a fix that allowed me to boot from the SSD in USB 3.0 port.</p>
@@ -649,7 +693,7 @@ dtoverlay=disable-bt  <br>
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2023/01/12/mass-effect-legendary-edition-being/" class="u-url"><time class="dt-published" datetime="2023-01-12 12:36:39 &#43;0300">Jan 12, 2023</time></a>
+		<a href="https://nikokultalahti.com/2023/01/12/mass-effect-legendary-edition-being/" class="u-url"><time class="dt-published" datetime="2023-01-12 09:36:39 &#43;0000">Jan 12, 2023</time></a>
 
 		<div class="e-content">
 			 <p>Mass Effect Legendary Edition being on PS+ in last December(?) was a really nice surprise. I’ve played some Mass Effect games when they were launched, but don’t remember much of those.</p>
@@ -664,7 +708,7 @@ It’s been very nice going through the Mass Effect 1, looking forward to playin
 			<h1><a href="https://nikokultalahti.com/2022/09/30/stadia-is-officially-closing-down/">Stadia is (officially) closing down</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2022/09/30/stadia-is-officially-closing-down/" class="u-url"><time class="dt-published" datetime="2022-09-30 14:18:54 &#43;0300">Sep 30, 2022</time></a>
+		<a href="https://nikokultalahti.com/2022/09/30/stadia-is-officially-closing-down/" class="u-url"><time class="dt-published" datetime="2022-09-30 11:18:54 &#43;0000">Sep 30, 2022</time></a>
 
 		<div class="e-content">
 			 <p>Google announced the yesterday that <a href="https://blog.google/products/stadia/message-on-stadia-streaming-strategy/">it’s shutting down Stadia</a> as it is for consumer use. The servers will shut down on 18th of January 2023.</p>
@@ -683,7 +727,7 @@ It’s been very nice going through the Mass Effect 1, looking forward to playin
 			<h1><a href="https://nikokultalahti.com/2022/09/09/tools-and-technologies-are-not/">Tools and technologies are not the solutions - they are merely potential</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2022/09/09/tools-and-technologies-are-not/" class="u-url"><time class="dt-published" datetime="2022-09-09 18:05:17 &#43;0300">Sep 9, 2022</time></a>
+		<a href="https://nikokultalahti.com/2022/09/09/tools-and-technologies-are-not/" class="u-url"><time class="dt-published" datetime="2022-09-09 15:05:17 &#43;0000">Sep 9, 2022</time></a>
 
 		<div class="e-content">
 			 <p>I participated in a sales training session today that was organized for our sales team. During the training, there was a mention that the salesperson should aim to create a need for offered products/solutions that they offer. I felt I needed a bit more clarification on this so I asked. I lead off with this:</p>
@@ -702,7 +746,7 @@ It’s been very nice going through the Mass Effect 1, looking forward to playin
 			<h1><a href="https://nikokultalahti.com/2022/01/05/yearly-review/">Yearly Review 2021</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2022/01/05/yearly-review/" class="u-url"><time class="dt-published" datetime="2022-01-05 18:03:42 &#43;0300">Jan 5, 2022</time></a>
+		<a href="https://nikokultalahti.com/2022/01/05/yearly-review/" class="u-url"><time class="dt-published" datetime="2022-01-05 15:03:42 &#43;0000">Jan 5, 2022</time></a>
 
 		<div class="e-content">
 			 <p>It’s again that time of the year when we should take a look at the rear view mirror and see what happened (and if those are the things that should have happened).</p>
@@ -752,7 +796,7 @@ I forgot to follow and keep track of activities I set for this year, for which r
 			<h1><a href="https://nikokultalahti.com/2021/01/11/yearly-review/">Yearly Review 2020</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2021/01/11/yearly-review/" class="u-url"><time class="dt-published" datetime="2021-01-11 11:09:00 &#43;0300">Jan 11, 2021</time></a>
+		<a href="https://nikokultalahti.com/2021/01/11/yearly-review/" class="u-url"><time class="dt-published" datetime="2021-01-11 08:09:00 &#43;0000">Jan 11, 2021</time></a>
 
 		<div class="e-content">
 			 <p>It’s been odd and challenging year. I been thinking about doing it earlier but I guess this year finally warranted it. This is my first proper yearly review.</p>
@@ -816,7 +860,7 @@ I forgot to follow and keep track of activities I set for this year, for which r
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2020/06/26/simple-enough-often-easier-said/" class="u-url"><time class="dt-published" datetime="2020-06-26 13:06:00 &#43;0300">Jun 26, 2020</time></a>
+		<a href="https://nikokultalahti.com/2020/06/26/simple-enough-often-easier-said/" class="u-url"><time class="dt-published" datetime="2020-06-26 10:06:00 &#43;0000">Jun 26, 2020</time></a>
 
 		<div class="e-content">
 			 <p>Simple enough. Often easier said than done though.</p>
@@ -829,7 +873,7 @@ I forgot to follow and keep track of activities I set for this year, for which r
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2020/06/19/a-stupid-decision-that-works/" class="u-url"><time class="dt-published" datetime="2020-06-19 13:56:00 &#43;0300">Jun 19, 2020</time></a>
+		<a href="https://nikokultalahti.com/2020/06/19/a-stupid-decision-that-works/" class="u-url"><time class="dt-published" datetime="2020-06-19 10:56:00 &#43;0000">Jun 19, 2020</time></a>
 
 		<div class="e-content">
 			 <p>A stupid decision that works out well becomes a brilliant decision in hindsight.</p>
@@ -840,7 +884,7 @@ I forgot to follow and keep track of activities I set for this year, for which r
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2020/03/10/we-are-just-a-bunch/" class="u-url"><time class="dt-published" datetime="2020-03-10 11:48:00 &#43;0300">Mar 10, 2020</time></a>
+		<a href="https://nikokultalahti.com/2020/03/10/we-are-just-a-bunch/" class="u-url"><time class="dt-published" datetime="2020-03-10 08:48:00 &#43;0000">Mar 10, 2020</time></a>
 
 		<div class="e-content">
 			 <p>We are just a bunch of monkeys on a spinning rock.</p>
@@ -851,7 +895,7 @@ I forgot to follow and keep track of activities I set for this year, for which r
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2019/12/02/first-black-friday-now-cyber/" class="u-url"><time class="dt-published" datetime="2019-12-02 15:38:00 &#43;0300">Dec 2, 2019</time></a>
+		<a href="https://nikokultalahti.com/2019/12/02/first-black-friday-now-cyber/" class="u-url"><time class="dt-published" datetime="2019-12-02 12:38:00 &#43;0000">Dec 2, 2019</time></a>
 
 		<div class="e-content">
 			 <p>First “Black Friday”, now “Cyber Monday”. </p>
@@ -866,7 +910,7 @@ Dark times indeed.</p>
 			<h1><a href="https://nikokultalahti.com/2019/11/26/bring-your-parents-to-work/">Bring your parents to work day</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2019/11/26/bring-your-parents-to-work/" class="u-url"><time class="dt-published" datetime="2019-11-26 13:36:00 &#43;0300">Nov 26, 2019</time></a>
+		<a href="https://nikokultalahti.com/2019/11/26/bring-your-parents-to-work/" class="u-url"><time class="dt-published" datetime="2019-11-26 10:36:00 &#43;0000">Nov 26, 2019</time></a>
 
 		<div class="e-content">
 			 <p>Last Friday there was an official “bring your child to work” -day in Finland. As we often do at <a href="https://gappsgroup.com">Gapps</a>, we did things a little differently. We arranged our own “Bring your parents to work” -day.</p>
@@ -883,7 +927,7 @@ Dark times indeed.</p>
 			<h1><a href="https://nikokultalahti.com/2019/11/11/day-challenge-no-added-sugar/">30 Day Challenge: No Added Sugar</a></h1>
 		
 
-		<a href="https://nikokultalahti.com/2019/11/11/day-challenge-no-added-sugar/" class="u-url"><time class="dt-published" datetime="2019-11-11 15:48:00 &#43;0300">Nov 11, 2019</time></a>
+		<a href="https://nikokultalahti.com/2019/11/11/day-challenge-no-added-sugar/" class="u-url"><time class="dt-published" datetime="2019-11-11 12:48:00 &#43;0000">Nov 11, 2019</time></a>
 
 		<div class="e-content">
 			 <!-- raw HTML omitted -->
@@ -896,7 +940,7 @@ Dark times indeed.</p>
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2019/11/05/a-comforting-thought-for-many/" class="u-url"><time class="dt-published" datetime="2019-11-05 12:57:00 &#43;0300">Nov 5, 2019</time></a>
+		<a href="https://nikokultalahti.com/2019/11/05/a-comforting-thought-for-many/" class="u-url"><time class="dt-published" datetime="2019-11-05 09:57:00 &#43;0000">Nov 5, 2019</time></a>
 
 		<div class="e-content">
 			 <p>A comforting thought for many.</p>
@@ -909,7 +953,7 @@ Dark times indeed.</p>
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2019/11/05/first-there-was-netflix-now/" class="u-url"><time class="dt-published" datetime="2019-11-05 03:37:00 &#43;0300">Nov 5, 2019</time></a>
+		<a href="https://nikokultalahti.com/2019/11/05/first-there-was-netflix-now/" class="u-url"><time class="dt-published" datetime="2019-11-05 00:37:00 &#43;0000">Nov 5, 2019</time></a>
 
 		<div class="e-content">
 			 <p>First there was Netflix, now there are several. Now it’s happening for game streaming.</p>
@@ -922,7 +966,7 @@ Dark times indeed.</p>
 	  <div class="h-entry">
 		
 
-		<a href="https://nikokultalahti.com/2019/10/31/ideas-bread-and-books-are/" class="u-url"><time class="dt-published" datetime="2019-10-31 22:22:00 &#43;0300">Oct 31, 2019</time></a>
+		<a href="https://nikokultalahti.com/2019/10/31/ideas-bread-and-books-are/" class="u-url"><time class="dt-published" datetime="2019-10-31 19:22:00 &#43;0000">Oct 31, 2019</time></a>
 
 		<div class="e-content">
 			 <p>“Ideas, bread and books are all the same – they’re better when they’re shared.</p>
